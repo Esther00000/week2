@@ -41,6 +41,7 @@
           <h1 class="h3 mb-3 font-weight-normal">請先登入</h1>
           <!-- 表單 -->
           <div class="col-8">
+            <!-- @submit.prevent 提交表單後不刷新頁面 -->
             <form class="form-signin" @submit.prevent="login">
               <!-- 帳號輸入欄 -->
               <div class="form-floating mb-3">

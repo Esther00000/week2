@@ -45,14 +45,14 @@
                 </tr>
               </thead>
               <!-- 商品迴圈  item => 單一商品物件 -->
-              <tbody v-for="(item , index) in products" :key="item.id">
+              <tbody v-for="(product , index) in products" :key="product.id">
                 <tr>
-                  <td width="150">{{ item.category }}</td>
-                  <td width="120">{{ item.origin_price }}</td>
-                  <td width="120">{{ item.price }}</td>
+                  <td width="150">{{ product.category }}</td>
+                  <td width="120">{{ product.origin_price }}</td>
+                  <td width="120">{{ product.price }}</td>
                   <td width="150">
                     <!-- v-if="item.is_enabled" 判斷商品是否啟用  -->
-                    <span class="text-success" v-if="item.is_enabled"
+                    <span class="text-success" v-if="product.is_enabled"
                       >啟用</span
                     >
                     <span v-else>未啟用</span>
@@ -62,7 +62,7 @@
                     <button
                       type="button"
                       class="btn btn-primary"
-                      @click="openProduct(item)"
+                      @click="openProduct(product)"
                     >
                       查看細節
                     </button>

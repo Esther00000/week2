@@ -26,7 +26,6 @@ createApp({
                 //登入失敗的結果
                 .catch((error) => {
                     alert('登入失敗請重新輸入');
-                    console.dir(error.response);
                 })
         }
     }

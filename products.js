@@ -30,7 +30,6 @@ createApp({
         .then((response) => {
           //response.data.products 為API商品資料
           this.products = response.data.products;
-          console.log(this.products)
         })
         .catch((err) => {
           alert('資料獲取失敗');
